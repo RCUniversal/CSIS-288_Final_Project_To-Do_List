@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--
+      CSIS 228—Advanced Web Development
+      Final Project
+      final-project-team-4
+      
+      Authors: 
+      Strawn,Travis
+      Cottrell,Ryan B
+      Rutland,Shelby
+      
+	  Date: 04/11/2020  
+      
+	  Filename: To-Do HTML
+   -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="Style.css">
+   <title>To-Do Lists Board</title>
+	</head>
+	
+	<body>
+		<h1 class="title">To-Do Lists</h1>
+		
+		<div class="all-lists">
+			<h2 class="list-title-list">My Lists</h2>
+			<ul class="tasks">
+				<li class="list-name active-list">Shopping</li>
+				<li class="list-name">Work</li>
+				<li class="list-name">Chores</li>
+			</ul>
+			
+			<form action="">
+				<input 
+					type="text"
+					class="new-list"
+					placeholder="New List Name"
+				/>
+				<!-- Add a new list -->
+				<button class="list-button">+</button>
+			</form>
+		</div>
+		
+		<div class="to-do-list">
+			<div class="list-header">
+				<h2 class="list-title">List Title</h2>
+				<p class="task-counter">(#) Tasks Remaining</p>
+			</div>
+			
+			<div class="list-body">
+				<div class="tasks">
+					<div class="task">
+						<input 
+							type="checkbox"
+							id="task-1"
+						/>
+						<label for="task-1">
+							<span class="custom-checkbox">
+							
+							</span>
+							Task 1
+						</label>
+					</div>
+<!-- ---------------------End of Task 1--------------------- -->
+					<div class="task">
+						<input 
+							type="checkbox"
+							id="task-2"
+						/>
+						<label for="task-2">
+							<span class="custom-checkbox">
+							
+							</span>
+							Task 2
+						</label>
+					</div>
+<!-- ---------------------End of Task 2--------------------- -->
+					<div class="task">
+						<input 
+							type="checkbox"
+							id="task-3"
+						/>
+						<label for="task-3">
+							<span class="custom-checkbox">
+							
+							</span>
+							Task 3
+						</label>
+					</div>
+<!-- ---------------------End of Task 3--------------------- -->
+				</div>
+				<div class="task-creator">
+					<form action="">
+						<input 
+							type="text"
+							class="new-task"
+							placeholder="New Task"
+						/>
+						<!-- Add a new Task -->
+					<button class="task-button">+</button>
+					</form>
+				</div>
+				<div class="task-delete">
+						<!-- Delete completed tasks -->
+					<button class="delete-completed">Delete Completed Tasks</button>
+						<!-- Delete the entire to-do list -->
+					<button class="delete-list">Delete To-Do List</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
